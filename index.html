@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Rental Mobil</title>
+    <style>
+
+        .root{
+            --primary: #000;
+            --bg:#666;
+        }
+        body {
+    font-family: Vcr osd mono, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration:none ;
+    background-image: url(bgmobil.jpg);
+     
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width: 100vw;
+ 
+    
+
+}
+
+.birindi{
+    
+    
+            width: 50%;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #f9f9f968;
+			border: 1px solid #ddd;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-size: large;
+}
+
+header {
+    background-color: #864caf;
+        color: white;
+    padding: 10px 0;
+    text-align: center;
+    
+   
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay hitam dengan transparansi */
+      
+    align-items: center; /* Memusatkan secara vertikal */
+    color: white; /* Warna teks */
+    text-align: center;
+}
+
+.hlmt{
+    
+    width: 75%;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #f9f9f968;
+			border: 1px solid #ddd;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-size: large;
+}
+
+.propil{
+    width: 75%;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #f9f9f968;
+			border: 1px solid #ddd;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-size: large;
+
+}
+
+.lohin{
+    
+    width: 25%;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #f9f9f968;
+			border: 1px solid #ddd;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-size: large;
+
+
+}
+
+
+.logo {
+    width: 100px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+footer {
+    background-color: #864caf;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-image: url(deepbg.png);
+
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+        </style>
+        <script>
+            
+        </script>
+</head>
+<body>
+    <header>
+        <img src="DEEP.png" alt="Logo Aplikasi" class="logo">
+        <nav class="navbar">
+        <div class="navbar-extra">
+            <ul>
+                <a href="#beranda">Beranda</a>
+                <a href="#transaksi">Transaksi</a>
+                <a href="#profil">Profil</a>
+                <a href="#login">Login</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="hero" id="beranda">
+            <main class="content">
+        <!-- Halaman Beranda -->
+        <section id="beranda">
+            <div class="birindi">
+                <img src="DEEP.png" alt="Logo Aplikasi" class="logo">
+            <h2>Selamat Datang di Aplikasi
+                <br> DEEP Rent car</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, sint! 
+                <br>Langkah-langkah menggunakan aplikasi:</p>
+            <ol>
+                <li>Login ke akun Anda.</li>
+                <li>Pilih jenis mobil yang ingin disewa.</li>
+                <li>Isi form transaksi dan simpan.</li>
+                <li>Anda dapat melihat daftar transaksi yang telah dilakukan.</li>
+            </ol>
+            <br>
+        </div>
+        </section>
+    </main>
+    </section>
+
+        <!-- Halaman Transaksi -->
+        <section id="transaksi">
+        <div class="hlmt">
+            <img src="DEEP.png" alt="Logo Aplikasi" class="logo">
+            <h2>Form Transaksi</h2>
+            <form id="transaksiForm">
+                <label for="namaMobil">Nama Mobil:</label>
+                <input type="text" id="namaMobil" required>
+                
+                <label for="jumlahHari">Jumlah Hari:</label>
+                <input type="number" id="jumlahHari" required>
+                
+                <label for="kategori">Kategori:</label>
+                <input type="text" id="kategori" required>
+                
+                <button type="submit">Simpan</button>
+            </form>
+            <p><a href="#daftarTransaksi">Daftar Transaksi</a></p>
+            <table id="daftarTransaksi">
+                <thead>
+                    <tr>
+                        <th>Nama Mobil</th>
+                        <th>Jumlah Hari</th>
+                        <th>Kategori</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Daftar transaksi akan ditambahkan di sini -->
+                </tbody>
+            </table>
+        </section>
+        </div>
+
+        <br>
+    </br>
+
+    <div class="propil">
+        <!-- Halaman Profil -->
+        <section id="profil">
+            <img src="DEEP.png" alt="Logo Aplikasi" class="logo">
+            <h2>Profil Aplikasi</h2>
+            <p>Aplikasi ini dirancang untuk memudahkan pengguna dalam melakukan transaksi rental mobil. Anda dapat menyewa mobil dengan mudah dan cepat, serta melihat riwayat transaksi Anda.</p>
+            <br>
+            <p>Rent Car Terpercaya di son talos<br>
+
+                Rasakan kenyamanan menjelajahi Son Talos dengan layanan Rent mobil kami yang mudah dan dapat diandalkan. Kami menawarkan berbagai jenis mobil berkualitas, mulai dari LCGC hingga mobil sport,
+                 siap menemani perjalanan Anda. Baik untuk liburan atau kebutuhan sehari-hari, kami siap memberikan solusi dengan harga terjangkau dan pelayanan terbaik.</p>
+        </section>
+
+    </div>
+        <!-- Halaman Login -->
+         <div class="lohin">
+        <section id="login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+
+</div>
+    <footer>
+        <img src="DEEP.png" alt="Logo Aplikasi" class="logo">
+
+       <H1> <p>&copy; 2025 DEEP Rent Car adryan</p></H1>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
